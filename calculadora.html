@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,76 +11,98 @@
             margin: 0;
             padding: 0;
         }
+
         .fundo {
-            background-image: linear-gradient(45deg,white,yellow);
+            text-align: center;
+            background-image: linear-gradient(45deg, white, rgb(0, 153, 255));
             height: 100vh;
-            color: blue;
+            color: rgb(235, 15, 15);
             font-family: Arial, Helvetica, sans-serif;
         }
-        .calculadora   {
+
+        .calculadora {
             position: absolute;
-            background-color: yellowgreen;
+            background-color: rgb(0, 0, 0);
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
             border-radius: 15px;
             padding: 15px;
         }
+
         .botao1 {
             width: 50px;
             height: 50px;
             font-size: 25px;
             cursor: pointer;
-            
+
         }
+
         .botao2 {
             width: 50px;
             height: 50px;
             font-size: 25px;
             cursor: pointer;
             background-color: cyan;
+        } 
+        
+        #resultado {
+            background-color: blanchedalmond; 
+            width: 207px;
+            height: 30px;
+            margin: 5px;
+            font-size: 25px;
+            color: brown;
+
         }
-     
+
+        table{
+            margin: auto;
+        }
+
     </style>
 </head>
+
 <body>
     <div class="fundo">
-    <h1></h1>
-    <div class="caculador"></div>
-    <h1>Caculadora</h1>
-    <p id="resutdo"></p> 
-    <table>
-        <tr>
-            <td><button class="botao2">C</button></td>
-            <td><button class="botao3"><</button></td>
-            <td><button class="botao2">/</button></td>
-            <td><button class="botao2">x</button></td>
-        </tr>
-        <tr>
-            <td><button class="botao1">7</button></td>
-            <td><button class="botao1">8</button></td>
-            <td><button class="botao1">9</button></td>
-            <td><button class="botao2">-</button></td>
-        </tr>
-        <tr>
-            <td><button class="botao1">4</button></td>
-            <td><button class="botao1">5</button></td>
-            <td><button class="botao1">6</button></td>
-            <td><button class="botao2">+</button></td>
-        </tr> 
-        <tr>
-            <td><button class="botao1">1</button></td>
-            <td><button class="botao1">2</button></td>
-            <td><button class="botao1">3</button></td>
-            <td rowspan="2"><button class="botao2" style="height: 106px;">=</button></td>
-        </tr>
-        <tr>
-            <td colspan="2"><button class="botao1" style="width: 106px;>0</button></td>
-            <td><button class="botao2">.</div></button></td>
-            
-        </tr>
-    </table>
+        <h1></h1>
+        <div class="calculadora">
+        <h1>Calculadora</h1>
+        <p id="resultado"></p>
+        <table>
+            <tr>
+                <td><button class="botao2">C</button></td>
+                <td><button class="botao2"><</button>
+                </td>
+                <td><button class="botao2">/</button></td>
+                <td><button class="botao2">x</button></td>
+            </tr>
+            <tr>
+                <td><button class="botao1">7</button></td>
+                <td><button class="botao1">8</button></td>
+                <td><button class="botao1">9</button></td>
+                <td><button class="botao2">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="botao1">4</button></td>
+                <td><button class="botao1">5</button></td>
+                <td><button class="botao1">6</button></td>
+                <td><button class="botao2">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="botao1">1</button></td>
+                <td><button class="botao1">2</button></td>
+                <td><button class="botao1">3</button></td>
+                <td rowspan="2"><button class="botao2" style="height: 106px;">=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="botao1" style="width: 106px">0</button></td>
+                <td><button class=" botao2">.</button></td>
 
+    </tr>
+    </table>
 </div>
+    </div>
 </body>
+
 </html>
